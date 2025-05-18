@@ -1,0 +1,39 @@
+// _components.scss
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.header {
+  background-color: $main-color;
+  padding: $spacing-unit;
+
+  nav {
+    @include flex-center;
+    gap: $spacing-unit;
+
+    a {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: $spacing-unit;
+  border-radius: 8px;
+  background: white;
+
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: $text-color;
+  }
+
+  .price {
+    color: $accent-color;
+    font-weight: bold;
+  }
+}

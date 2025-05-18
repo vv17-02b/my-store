@@ -1,0 +1,146 @@
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 160px 40px;
+	min-height: 100vh;
+	// background: linear-gradient(to right, #f0f4f8, #ffffff);
+	background-color: #fff;
+
+	// Левая часть
+	&__left {
+		flex: 1;
+		padding-right: 40px;
+
+		.blog__hero-title {
+			font-size: 3.5rem;
+			margin-bottom: 20px;
+			color: #092a8f;
+			line-height: 1.2;
+		}
+
+		.blog__hero-description {
+			font-size: 1.5rem;
+			color: #444;
+			margin-bottom: 3rem;
+		}
+
+		.hero__btn {
+			display: flex;
+      justify-content: center;
+			width: 100%;
+			max-width: 300px;
+			margin: 0 auto;
+			background-color: #092a8f;
+			color: #fff;
+			padding: 12px 24px;
+			border: none;
+			border-radius: 6px;
+			font-size: 1.2rem;
+			cursor: pointer;
+			text-decoration: none;
+			transition: background 0.3s ease;
+
+			&:hover {
+				background-color: #061e6a;
+			}
+		}
+	}
+
+	// Правая часть
+	&__right {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.hero__img {
+			max-width: 600px;
+			height: auto;
+			border-radius: 10px;
+			// box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+			object-fit: cover;
+			width: 100%;
+			max-height: 80vh;
+			transition: opacity 0.5s ease;
+		}
+	}
+}
+
+// ============================================
+// Адаптивность
+// ============================================
+
+@media (max-width: 1024px) {
+	.hero {
+		padding: 40px 20px;
+
+		&__left {
+			.blog__hero-title {
+				font-size: 2.8rem;
+			}
+
+			.blog__hero-description {
+				font-size: 1.3rem;
+			}
+
+			.hero__btn {
+				font-size: 1rem;
+				padding: 10px 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		flex-direction: column;
+		text-align: center;
+
+		&__left {
+			padding: 0;
+			margin-bottom: 30px;
+
+			.blog__hero-title {
+				font-size: 2.2rem;
+			}
+
+			.blog__hero-description {
+				font-size: 1.2rem;
+			}
+		}
+
+		&__right {
+			.hero__img {
+				max-height: 300px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.hero {
+		padding: 30px 15px;
+
+		&__left {
+			.blog__hero-title {
+				font-size: 1.8rem;
+			}
+
+			.blog__hero-description {
+				font-size: 1rem;
+			}
+
+			.hero__btn {
+				width: 100%;
+				font-size: 1rem;
+			}
+		}
+
+		&__right {
+			.hero__img {
+				max-height: 250px;
+			}
+		}
+	}
+}

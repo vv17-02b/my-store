@@ -1,0 +1,30 @@
+// Цвета
+$main-color: #2c3e50;
+$accent-color: #e67e22;
+$background: #f9f9f9;
+$text-color: #333;
+$link-color: #3498db;
+$light-color: #fff;
+
+// Размеры
+$max-width: 1200px;
+$spacing-unit: 16px;
+
+// Шрифты
+$font-family-base: 'Arial', sans-serif;
+
+:root {
+  // base
+  --font-family: "Jost", sans-serif;
+  --content-width: 1070px;
+  --content-fluid-width: 1790px;
+  --container-offset: 50px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  
+  // colors
+  --light-color: #fff;
+  --accent-color: #d52027;
+  --dark-color: #141024;
+  --text-color: rgba(20, 16, 36, 0.7);
+}
