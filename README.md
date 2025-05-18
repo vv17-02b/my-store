@@ -23,3 +23,4 @@
    ```bash
    git clone https://github.com/vv17-02b/my-store.git
    cd my-store
+https://vv17-02b.github.io/my-store/
